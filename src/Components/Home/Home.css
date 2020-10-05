@@ -1,0 +1,42 @@
+.event-container {
+  height: 400vh;
+  display: flex;
+  background: #f0f2f5;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 300px;
+  border: 1px solid #d4daff;
+  border-right: none;
+  padding: 12px;
+  height: 51px;
+  font-size: 18px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #529a78;
+}
+
+.searchTerm:focus {
+  color: #00b4cc;
+}
+
+.searchButton {
+  width: 81px;
+  height: 51px;
+  border: 1px solid #00b4cc;
+  background: #00b4cc;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}

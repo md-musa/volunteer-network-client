@@ -1,0 +1,140 @@
+.login-section {
+  display: flex;
+  height: 620px;
+  width: 100%;
+  background: #f0f2f5;
+}
+
+.login__left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+.login__left > div > img {
+  width: 50%;
+}
+.login__left > div {
+  margin-left: 40%;
+}
+.login__left h2 {
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 32px;
+  width: 500px;
+}
+.login__left > img {
+  height: 100%;
+}
+
+.login__login-form {
+  align-items: center;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  margin: 40px 0 0;
+  padding: 20px 0 28px;
+  width: 396px;
+  text-align: center;
+  padding: 7px;
+  padding-bottom: 24px;
+  padding-top: 10px;
+  display: block;
+}
+.login__right {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+.login__login-field {
+  font-size: 17px;
+  padding: 14px 16px;
+  width: 330px;
+  border: 1px solid #dddfe2;
+  color: #1d2129;
+  border-radius: 6px;
+  margin: 10px;
+}
+.login__login-btn {
+  background-color: #1877f2;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 16px;
+  width: 332px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+  margin-top: 5px;
+}
+.create-new-account {
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  line-height: 48px;
+  padding: 0 16px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #42b72a;
+  color: #fff;
+}
+.login__forgotten-acc {
+  color: #1877f2;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+}
+.visible-signup {
+  display: block;
+}
+
+/* Sign up section */
+/* .signup-section {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: block;
+} */
+.signup {
+  align-items: center;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  margin: 40px 0 0;
+  padding: 20px 0 28px;
+  width: 396px;
+  text-align: center;
+  padding: 7px;
+  padding-bottom: 24px;
+  padding-top: 10px;
+}
+
+.loginWithGoogle {
+  width: 461px;
+  height: 51px;
+  left: 492px;
+  top: 696px;
+
+  background: #ffffff;
+  border: 1px solid #c7c7c7;
+  box-sizing: border-box;
+  border-radius: 57px;
+}
