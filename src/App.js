@@ -11,11 +11,11 @@ import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 import AttendedEvenet__home from "./Components/AttendedEvent__home/AttendedEvenet__home";
 import AdminHome from "./Components/AdminHome/AdminHome";
 
-export const EventTitleToForm = createContext();
+export const EventDetailsToForm = createContext();
 export const UserDataContext = createContext();
 
 function App() {
-  const [title, setTitle] = useState({});
+  const [eventDetails, setEventDetails] = useState({});
   const [loggedInUser, setLoggedInUser] = useState({
     email: "",
     name: "",
@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div className="App">
-      <EventTitleToForm.Provider value={[title, setTitle]}>
+      <EventDetailsToForm.Provider value={[eventDetails, setEventDetails]}>
         <UserDataContext.Provider value={[loggedInUser, setLoggedInUser]}>
           <Router>
             <Header />
@@ -63,7 +63,7 @@ function App() {
             </Switch>
           </Router>
         </UserDataContext.Provider>
-      </EventTitleToForm.Provider>
+      </EventDetailsToForm.Provider>
     </div>
   );
 }

@@ -1,24 +1,25 @@
 import React, {useContext, useState} from "react";
 import "./RegisterToNewEvent.css";
 import {useHistory} from "react-router-dom";
-import {EventTitleToForm, UserDataContext} from "../../App";
+import {EventDetailsToForm, UserDataContext} from "../../App";
 
 const Registation = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserDataContext);
-  const [title, setTitle] = useContext(EventTitleToForm);
+  const [eventDetais, setEventDetails] = useContext(EventDetailsToForm);
   let history = useHistory();
 
   const [userData, setUserData] = useState({
-    name: "",
-    email: "",
+    name: loggedInUser.name,
+    email: loggedInUser.email,
     desicription: "",
-    event: "",
+    event: eventDetais.eventTitle,
     date: "",
-    eventImage: "",
+    eventImage: eventDetais.eventImage,
   });
 
   const hendelBlur = (e) => {
     userData[e.target.name] = e.target.value;
+    console.log(userData);
   };
 
   const handelRegistation = (e) => {
@@ -84,27 +85,12 @@ const Registation = () => {
               className="login__login-field"
               name="event"
               type="text"
-              value={title.eventTitle}
+              value={eventDetais.eventTitle}
               placeholder="Event name"
               onBlur={hendelBlur}
+              required
             />
-
-            <input
-              style={{visibility: "visible"}}
-              name="eventImage"
-              type="text"
-              className="login__login-field"
-              value={title.eventImage}
-              placeholder="Event name"
-              onBlur={hendelBlur}
-            />
-
             <br />
-            <span style={{color: "#ff8080"}}>
-              Before register please focus once all input area otherwise won't
-              work
-            </span>
-
             <input
               className="login__login-btn"
               type="submit"

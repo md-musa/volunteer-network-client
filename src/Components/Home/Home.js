@@ -28,7 +28,6 @@ const Home = () => {
 
   return (
     <div>
-      {/* <Header /> */}
       <div style={{textAlign: "center", background: "#f0f2f5"}}>
         <h2 style={{color: "gray"}}>I GROW BY HELPING PEOPLE IN NEED</h2>
         <input
@@ -40,7 +39,7 @@ const Home = () => {
           Search
         </Button>
       </div>
-      {/* fetching event data from database and maping here */}
+
       <div className="event-container">
         {eventCollection.map((singleEvent) => (
           <EventCard
